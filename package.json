@@ -1,0 +1,19 @@
+{
+	"name": "wgpuster",
+	"type": "module",
+	"workspaces": [
+		"**/**"
+	],
+	"devDependencies": {
+		"@lmpx-config/eslint": "~0",
+		"@lmpx-config/prettier": "~0",
+		"@types/node": "^20",
+		"eslint": "^8",
+		"prettier": "^3",
+		"typescript": "^5"
+	},
+	"typescriptWorkspaces": {
+		"enabled": true
+	},
+	"packageManager": "yarn@3.6.4"
+}

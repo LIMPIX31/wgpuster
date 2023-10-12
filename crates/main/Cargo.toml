@@ -1,0 +1,27 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2021"
+default-target = "wasm32-unknown-unknown"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+log = "0.4"
+winit = "0.28"
+console_error_panic_hook = "0.1.6"
+console_log = "1.0"
+wgpu = { version = "0.17", features = ["webgl"]}
+wasm-bindgen = { version = "0.2", features = [] }
+wasm-bindgen-futures = "0.4"
+web-sys = { version = "0.3", features = [
+	"Document",
+	"Window",
+	"Element",
+]}
+
+[repack]
+target = "web"
